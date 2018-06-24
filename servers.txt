@@ -1,0 +1,17 @@
+#########################
+# Private rAthena Servers
+
+[rAthena]
+ip 172.17.0.3
+port 6900
+version 55
+master_version 16
+serverType kRO_RagexeRE_2015_10_29a
+serverEncoding Korean
+charBlockSize 145
+addTableFolders kRO/RagexeRE_2015_10_29a;pserver;translated;translated/kRO_english;kRO
+recvpackets recvpackets.txt
+
+# following options are optional
+private 1
+pincode 0
