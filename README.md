@@ -51,7 +51,7 @@ Alpine Linux footprint is fairly small, but OpenKore can be quite consuming in t
 If you have a readily accesible rAthena's MySQL sever and the rAthena server itself, then usage is straight forward:
 
 ```
-docker run -d --restart=unless-stopped -e MYSQL_HOST="MYSQL host IP" -e MYSQL_USER="MySQL username" -e MYSQL_PWD="MySQL password" -e MYSQL_DB="rAthena" -e OK_IP="10.0.0.3" -e OK_USERNAME="botijo" -OK_PWD="p4ss@w0rd" -e OK_USERNAMEMAXSUFFIX="5000" -e OK_FOLLOW_USERNAME1="Karloch" cmilanf/docker-openkore:latest
+docker run -d --restart=unless-stopped -e MYSQL_HOST="MYSQL host IP" -e MYSQL_USER="MySQL username" -e MYSQL_PWD="MySQL password" -e MYSQL_DB="rAthena" -e OK_IP="10.0.0.3" -e OK_USERNAME="botijo" -e OK_PWD="p4ss@w0rd" -e OK_USERNAMEMAXSUFFIX="5000" -e OK_FOLLOW_USERNAME1="Karloch" cmilanf/docker-openkore:latest
 ```
 
 ## Related projects:
