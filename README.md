@@ -18,13 +18,13 @@ Even if this Docker build was developed for that session, it is focused at [Kube
 
 ## File description
 
-  * **config/**. Custom automation config depending on character class.
-  * **k8s/**. Kubernetes YAML files to deploy the service in on-premises development environment, AKS and Rancher 2.x.
-  * **tools/**. Some small Windows batch scripts for automating some operations as ACR permissions for AKS cluster.
-  * **Dockerfile**. The core of this repo, documented with the LABEL entries.
-  * **docker-entrypoint.sh**. The Docker entrypoint that leaves the container in the desired state for execution.
-  * **recvpackets.txt**. Sample results from [this process](http://openkore.com/index.php/Packet_Length_Extractor), needed if we are connecting OpenKore to rAthena.
-  * **servers.txt**. Server configuration for rAthena, values explanation can be found [here](http://openkore.com/index.php/Connectivity_Guide)
+  * `config/`. Custom automation config depending on character class.
+  * `k8s/`. Kubernetes YAML files to deploy the service in on-premises development environment, AKS and Rancher 2.x.
+  * `tools/`. Some small Windows batch scripts for automating some operations as ACR permissions for AKS cluster.
+  * `Dockerfile`. The core of this repo, documented with the LABEL entries.
+  * `docker-entrypoint.sh`. The Docker entrypoint that leaves the container in the desired state for execution.
+  * `recvpackets.txt`. Sample results from [this process](http://openkore.com/index.php/Packet_Length_Extractor), needed if we are connecting OpenKore to rAthena.
+  * `servers.txt`. Server configuration for rAthena, values explanation can be found [here](http://openkore.com/index.php/Connectivity_Guide)
 
 ## Requeriments
 OpenKore requires a Ragnarok Online or [rAthena](https://github.com/cmilanf/docker-rathena) server online in order to work.
@@ -34,18 +34,18 @@ Alpine Linux footprint is fairly small, but OpenKore can be quite consuming in t
 
 ## Environment variables accepted by the image
 
-  * OK_IP. IP address of the Ragnarok Online or rAthena server
-  * OK_USERNAME. Account username.
-  * OK_PWD. Account password.
-  * OK_CHAR. Character slot. Default: 1
-  * OK_USERNAMEMAXSUFFIX. Maximum number of suffixes to generate with the username.
-  * OK_KILLSTEAL. It is ok that the bot attacks monster that are already being attacked by other players.
-  * OK_FOLLOW_USERNAME1. Name of the username to follow with 20% probability.
-  * OK_FOLLOW_USERNAME2. Name of a second username to follow with 20% probability.
-  * MYSQL_HOST. Hostname of the MySQL database. Ex: calnus-beta.mysql.database.azure.com.
-  * MYSQL_DB. Name of the MySQL database.
-  * MYSQL_USER. Database username for authentication.
-  * MYSQL_PWD. Password for authenticating with database.
+  * `OK_IP`. IP address of the Ragnarok Online or rAthena server
+  * `OK_USERNAME`. Account username.
+  * `OK_PWD`. Account password.
+  * `OK_CHAR`. Character slot. Default: 1
+  * `OK_USERNAMEMAXSUFFIX`. Maximum number of suffixes to generate with the username.
+  * `OK_KILLSTEAL`. It is ok that the bot attacks monster that are already being attacked by other players.
+  * `OK_FOLLOW_USERNAME1`. Name of the username to follow with 20% probability.
+  * `OK_FOLLOW_USERNAME2`. Name of a second username to follow with 20% probability.
+  * `MYSQL_HOST`. Hostname of the MySQL database. Ex: `calnus-beta.mysql.database.azure.com`
+  * `MYSQL_DB`. Name of the MySQL database.
+  * `MYSQL_USER`. Database username for authentication.
+  * `MYSQL_PWD`. Password for authenticating with database.
 
 ## Usage
 If you have a readily accesible rAthena's MySQL sever and the rAthena server itself, then usage is straight forward:
